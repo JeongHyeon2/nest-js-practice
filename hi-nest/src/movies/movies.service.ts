@@ -33,7 +33,7 @@ export class MoviesService {
     update(id: string, updateData:UpdateMovieDto) {
         const moive = this.getOne(id);
         this.deleteOne(id);
-        this.movies.push({ ...moive, ...updateData,"title":"test" });
+        this.movies.push({ ...moive, ...updateData, });
         console.log(moive);
         console.log(updateData);
 
